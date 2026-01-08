@@ -8,7 +8,9 @@ ClapTrap::ClapTrap(const std::string& name)
 }
 
 ClapTrap::ClapTrap()
-    : name("unknown"), hit_points(10), energy_points(10), attack_damage(0) {}
+    : name("unknown"), hit_points(10), energy_points(10), attack_damage(0) {
+  std::cout << "CrapTrap " << name << " constructed" << std::endl;
+}
 
 ClapTrap::ClapTrap(const ClapTrap& other)
     : name(other.name), hit_points(other.hit_points),
