@@ -28,6 +28,8 @@ DiamondTrap::DiamondTrap()
 DiamondTrap::DiamondTrap(const DiamondTrap& other)
     : ClapTrap(other), ScavTrap(other), FragTrap(other) {
   *this = other;
+
+  std::cout << "DiamondTrap copy constructed" << std::endl;
 }
 
 // DiamondTrap type other is implicitly casted into ClapTrap type

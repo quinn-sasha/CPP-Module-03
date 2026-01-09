@@ -11,7 +11,9 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name, 100, 100, 30) {
   std::cout << "FragTrap " << name << " constructed" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {}
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {
+  std::cout << "FragTrap copy constructed" << std::endl;
+}
 
 FragTrap& FragTrap::operator=(const FragTrap& other) {
   if (this == &other) {

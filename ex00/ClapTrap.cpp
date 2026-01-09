@@ -14,7 +14,9 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(const ClapTrap& other)
     : name(other.name), hit_points(other.hit_points),
-      energy_points(other.energy_points), attack_damage(other.attack_damage) {}
+      energy_points(other.energy_points), attack_damage(other.attack_damage) {
+  std::cout << "CrapTrap copy constructed" << std::endl;
+}
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
   if (this == &other) {

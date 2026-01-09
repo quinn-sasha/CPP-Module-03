@@ -12,7 +12,10 @@ ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name, 100, 50, 20) {
 }
 
 // ScavTrap type other is implicitly casted into ClapTrap type
-ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {}
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
+
+  std::cout << "ScavTrap copy constructed" << std::endl;
+}
 
 // ScavTrap type other is implicitly casted into ClapTrap type
 ScavTrap& ScavTrap::operator=(const ScavTrap& other) {

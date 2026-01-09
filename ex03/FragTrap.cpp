@@ -12,7 +12,10 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name, 100, 100, 30) {
 }
 
 // DiamondTrap type other is implicitly casted into ClapTrap type
-FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {}
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {
+
+  std::cout << "FragTrap copy constructed" << std::endl;
+}
 
 // DiamondTrap type other is implicitly casted into ClapTrap type
 FragTrap& FragTrap::operator=(const FragTrap& other) {
