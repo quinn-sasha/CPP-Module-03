@@ -1,7 +1,7 @@
-#include "FragTrap.hpp"
-#include "ClapTrap.hpp"
 #include <iostream>
 #include <string>
+#include "FragTrap.hpp"
+#include "ClapTrap.hpp"
 
 FragTrap::FragTrap() : ClapTrap("unknown", 100, 100, 30) {
   std::cout << "FragTrap " << name << " constructed" << std::endl;
@@ -13,7 +13,6 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name, 100, 100, 30) {
 
 // DiamondTrap type other is implicitly casted into ClapTrap type
 FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other) {
-
   std::cout << "FragTrap copy constructed" << std::endl;
 }
 

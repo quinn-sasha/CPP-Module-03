@@ -1,5 +1,5 @@
-#include "DiamondTrap.hpp"
 #include <iostream>
+#include "DiamondTrap.hpp"
 
 int main() {
   DiamondTrap doraemon("Doraemon");

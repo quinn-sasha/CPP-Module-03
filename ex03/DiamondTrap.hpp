@@ -1,16 +1,16 @@
 #ifndef EX03_DIAMONDTRAP_HPP_
 #define EX03_DIAMONDTRAP_HPP_
 
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
 #include <string>
+#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 class DiamondTrap : public ScavTrap, public FragTrap {
-  std::string name; // name hiding!
+  std::string name;  // name hiding!
 
-public:
+ public:
   DiamondTrap();
-  DiamondTrap(const std::string& name);
+  explicit DiamondTrap(const std::string& name);
   DiamondTrap(const DiamondTrap& other);
   DiamondTrap& operator=(const DiamondTrap& other);
   ~DiamondTrap();
@@ -19,4 +19,4 @@ public:
   void whoAmI();
 };
 
-#endif // EX03_DIAMONDTRAP_HPP_
+#endif  // EX03_DIAMONDTRAP_HPP_
