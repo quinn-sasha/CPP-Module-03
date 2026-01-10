@@ -1,5 +1,5 @@
-#ifndef EX00_CRAPTRAP_HPP_
-#define EX00_CRAPTRAP_HPP_
+#ifndef EX00_CLAPTRAP_HPP_
+#define EX00_CLAPTRAP_HPP_
 
 #include <string>
 
@@ -9,9 +9,9 @@ class ClapTrap {
   int energy_points;
   int attack_damage;
 
-public:
+ public:
   ClapTrap();
-  ClapTrap(const std::string& name);
+  explicit ClapTrap(const std::string& name);
   ClapTrap(const ClapTrap& other);
   ClapTrap& operator=(const ClapTrap& other);
   ~ClapTrap();
@@ -24,4 +24,4 @@ public:
   int getEnergyPoints() const;
 };
 
-#endif // EX00_CRAPTRAP_HPP_
+#endif  // EX00_CLAPTRAP_HPP_

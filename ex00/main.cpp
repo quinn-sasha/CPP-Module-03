@@ -1,5 +1,5 @@
-#include "ClapTrap.hpp"
 #include <iostream>
+#include "ClapTrap.hpp"
 
 int main() {
   ClapTrap gundam("gundam");
