@@ -1,5 +1,5 @@
-#include "ScavTrap.hpp"
 #include <iostream>
+#include "ScavTrap.hpp"
 
 int main() {
   ScavTrap evangelion("evangelion");

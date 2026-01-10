@@ -1,7 +1,7 @@
-#include "ScavTrap.hpp"
-#include "ClapTrap.hpp"
 #include <iostream>
 #include <string>
+#include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap("unknown", 100, 50, 20) {
   std::cout << "ScavTrap " << name << " constructed" << std::endl;
