@@ -1,6 +1,6 @@
+#include <iostream>
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
-#include <iostream>
 
 int main() {
   ScavTrap evangelion("evangelion");

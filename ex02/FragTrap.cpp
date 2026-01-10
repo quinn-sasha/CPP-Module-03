@@ -1,7 +1,7 @@
-#include "FragTrap.hpp"
-#include "ClapTrap.hpp"
 #include <iostream>
 #include <string>
+#include "FragTrap.hpp"
+#include "ClapTrap.hpp"
 
 FragTrap::FragTrap() : ClapTrap("unknown", 100, 100, 30) {
   std::cout << "FragTrap " << name << " constructed" << std::endl;

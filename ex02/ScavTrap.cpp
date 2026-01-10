@@ -1,7 +1,7 @@
-#include "ScavTrap.hpp"
-#include "ClapTrap.hpp"
 #include <iostream>
 #include <string>
+#include "ScavTrap.hpp"
+#include "ClapTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap("unknown", 100, 50, 20) {
   std::cout << "ScavTrap " << name << " constructed" << std::endl;
@@ -13,7 +13,6 @@ ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name, 100, 50, 20) {
 
 // ScavTrap type other is implicitly casted into ClapTrap type
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
-
   std::cout << "ScavTrap copy constructed" << std::endl;
 }
 

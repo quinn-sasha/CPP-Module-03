@@ -1,13 +1,13 @@
 #ifndef EX02_FRAGTRAP_HPP_
 #define EX02_FRAGTRAP_HPP_
 
-#include "ClapTrap.hpp"
 #include <string>
+#include "ClapTrap.hpp"
 
 class FragTrap : public ClapTrap {
-public:
+ public:
   FragTrap();
-  FragTrap(const std::string& name);
+  explicit FragTrap(const std::string& name);
   FragTrap(const FragTrap& other);
   FragTrap& operator=(const FragTrap& other);
   ~FragTrap();
@@ -15,4 +15,4 @@ public:
   void highFivesGuys();
 };
 
-#endif // EX02_FRAGTRAP_HPP_
+#endif  // EX02_FRAGTRAP_HPP_

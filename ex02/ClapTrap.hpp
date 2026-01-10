@@ -1,19 +1,18 @@
-#ifndef EX02_CRAPTRAP_HPP_
-#define EX02_CRAPTRAP_HPP_
+#ifndef EX02_CLAPTRAP_HPP_
+#define EX02_CLAPTRAP_HPP_
 
 #include <string>
 
 class ClapTrap {
-
-protected:
+ protected:
   std::string name;
   int hit_points;
   int energy_points;
   int attack_damage;
 
-public:
+ public:
   ClapTrap();
-  ClapTrap(const std::string& name);
+  explicit ClapTrap(const std::string& name);
   ClapTrap(const std::string& name, int hit_points, int energy_points,
            int attack_damage);
   ClapTrap(const ClapTrap& other);
@@ -28,4 +27,4 @@ public:
   int getEnergyPoints() const;
 };
 
-#endif // EX02_CRAPTRAP_HPP_
+#endif  // EX02_CLAPTRAP_HPP_
